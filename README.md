@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+這是練習專用的資料夾，歡迎大家自由玩爛他 XD😎
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. 請`clone`一份到自己本地
+2. 分別新增兩個分支並`commit`，再推上來
+3. 大家互相許可別人的PR
+4. GOGOGO 🤜
