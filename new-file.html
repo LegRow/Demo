@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Menu </title>
+        <meta charset="UTF-8">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        {% for r in restaurants %}
+        <h1>{{ r.name }} </h1>
+        {% if r.food_set.all %}
+        <p> 目前共有 {{ r.food_set.all|lenght }} 活動 </p>
+        <table>
+            <tr>
+                <th> 名稱 </th>
+                <th> 費用 </th>
+                <th> 時間 </th>
+                <th> 備註 </th>
+            </tr>
+            { % for food in r.food_set.all %}
+            <tr>
+                <td> {{ food.name }} </td>
+                <td> {{ food.price }} </td>
+                <td> {% if food.is＿popular %} 30分鐘 {% else %} </td>
+                <td> {{ food.comment }} </td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p> 活動結束！！</p>
+        {% endif %}
+        {% endfor %}
+    </body>
+</html>
